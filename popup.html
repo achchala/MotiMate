@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MotiMate</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Adjustments to align text and checkboxes */
+    body {
+      width: 200px; /* Set a percentage width for the popup */
+      margin: 0 auto; /* Center the popup horizontally */
+      font-family: Arial, sans-serif; /* Example font family, adjust as needed */
+    }
+
+    h2 {
+      text-align: center; /* Center the heading */
+    }
+
+    .checkbox-label {
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+
+
+    #save-settings {
+      display: block;
+      margin: 10px auto;
+    }
+
+  </style>
+</head>
+<body>
+  <h2>Edit Reminder</h2>
+
+  <div class="checkbox-label">
+    <input type="checkbox" id="motivation" value="motivation">
+    <label for="motivation">Confidence</label>
+  </div>
+
+  <!-- Repeat the similar structure for other checkboxes -->
+  
+  <div class="checkbox-label">
+    <input type="checkbox" id="excellence" value="excellence">
+    <label for="excellence">Excellence</label>
+  </div>
+  
+  <div class="checkbox-label">
+    <input type="checkbox" id="happiness" value="happiness">
+    <label for="happiness">Happiness</label>
+  </div>
+  
+  <div class="checkbox-label">
+    <input type="checkbox" id="dreams" value="dreams">
+    <label for="dreams">Dreams</label>
+  </div>
+  
+  <div class="checkbox-label">
+    <input type="checkbox" id="inspiration" value="inspiration">
+    <label for="inspiration">Inspiration</label>
+  </div>
+  
+  <div class="checkbox-label">
+    <input type="checkbox" id="love" value="love">
+    <label for="love">Love</label>
+  </div>
+  
+  <div class="checkbox-label">
+    <input type="checkbox" id="success" value="success">
+    <label for="success">Success</label>
+  </div>
+
+  <label for="frequency">How many per day?</label>
+  <input type="number" id="frequency" min="1" placeholder="Enter frequency"><br>
+
+  <label for="start-time">Start at</label>
+  <input type="time" id="start-time"><br>
+
+  <label for="end-time">End at</label>
+  <input type="time" id="end-time"><br>
+
+  <button id="save-settings">Save</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>
